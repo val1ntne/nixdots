@@ -91,15 +91,16 @@
     dunst
 
     # Code editors
-    #    neovim
-    #    	vscode
+    neovim
+    vscode
     emacs
         
     # Helpful stuff
     tldr
     nix-doc
   ];
-
+  
+  nixpkgs.config.allowUnfree = true;
   #home.allowUnfree = true;
   home.stateVersion = "25.11";
   # Let Home Manager install and manage itself.
